@@ -1,0 +1,347 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="合同会社Liconnect。通信業界を通じて人と企業をつなぎ、未来を作る会社です。">
+  <title>合同会社Liconnect｜人と企業をつなぎ、未来を作る</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Yu Gothic", "Meiryo", sans-serif;
+      color: #17232d;
+      background: #ffffff;
+      line-height: 1.8;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    header {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     gap: 24px;
+     padding: 12px 5%;
+     background: #ffffff;
+    }
+
+    .logo {
+     display: inline-flex;
+     align-items: center;
+     flex-shrink: 0;
+     line-height: 0;
+    }
+    .logo img {
+     display: block;
+     width: 170px;
+     max-width: 100%;
+     height: auto;
+     object-fit: contain;
+}
+    nav {
+     display: flex;
+     align-items: center;
+     gap: 24px;
+    }
+
+    .hero {
+      min-height: 590px;
+      padding: 90px 8%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      color: #ffffff;
+      background:
+  linear-gradient(
+    90deg,
+    rgba(16, 24, 32, 0.85),
+    rgba(16, 24, 32, 0.30)
+  ),
+  url("imsges/main-visual.jpg") center / cover no-repeat;
+    }
+
+    .eyebrow {
+      color: #55d7c0;
+      font-size: 12px;
+      letter-spacing: 3px;
+      font-weight: bold;
+    }
+
+    .hero h1 {
+      margin: 20px 0;
+      font-size: clamp(34px, 5vw, 62px);
+      line-height: 1.5;
+      letter-spacing: 2px;
+    }
+
+    .hero p {
+      color: #d3dfe5;
+      max-width: 560px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 25px;
+      border-radius: 4px;
+      background: #39c6b0;
+      color: #10252a;
+      font-weight: bold;
+    }
+
+    .section {
+      padding: 90px 8%;
+    }
+
+    .section h2 {
+      margin-bottom: 8px;
+      font-size: 32px;
+    }
+
+    .section-label {
+      color: #199c8b;
+      letter-spacing: 3px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .intro {
+      max-width: 700px;
+      color: #586671;
+    }
+
+    .services {
+      background: #f4f7f8;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+      margin-top: 35px;
+    }
+
+    .card {
+      padding: 25px;
+      background: #ffffff;
+      border: 1px solid #e0e7e9;
+      border-radius: 8px;
+    }
+
+    .card h3 {
+      font-size: 18px;
+    }
+
+    .card p {
+      color: #586671;
+      font-size: 14px;
+    }
+
+    .recruit {
+      color: #ffffff;
+      background: #172e3b;
+    }
+
+    .recruit p {
+      color: #d3dfe5;
+    }
+
+    .company-info {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 25px;
+    }
+
+    .company-info th,
+    .company-info td {
+      padding: 15px;
+      text-align: left;
+      border-bottom: 1px solid #e0e7e9;
+      overflow-wrap: anywhere;
+    }
+
+    .company-info th {
+      width: 30%;
+      background: #f4f7f8;
+    }
+
+    footer {
+      padding: 28px 8%;
+      color: #d3dfe5;
+      background: #101820;
+      font-size: 13px;
+    }
+
+    @media (max-width: 700px) {
+      header {
+        height: auto;
+        min-height: 70px;
+        padding: 16px 5%;
+        align-items: flex-start;
+        gap: 12px;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+      .logo img {
+       width: 140px;
+      }
+
+      header nav {
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+      nav {
+        gap: 16px;
+        flex-wrap: wrap;
+        font-size: 12px;
+      }
+
+      .hero {
+        min-height: 500px;
+        padding: 65px 6%;
+      }
+
+      .hero h1 {
+        font-size: 35px;
+      }
+
+      .section {
+        padding: 65px 6%;
+      }
+
+      .section h2 {
+        font-size: 27px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .company-info th,
+      .company-info td {
+        padding: 12px 8px;
+        font-size: 13px;
+      }
+     .logo {
+  display: inline-flex;
+  align-items: center;
+}
+
+.logo img {
+  display: block;
+  width: 150px;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+    }
+  </style>
+</head>
+<body>
+  <header>
+     <a class="logo" href="#" aria-label="Liconnect ホーム">
+    <img src="imsges/logo3.png" alt="合同会社Liconnect">
+    <nav>
+      <a href="#about">私たちについて</a>
+      <a href="#service">事業内容</a>
+      <a href="#recruit">採用情報</a>
+      <a href="#company">会社概要</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <span class="eyebrow">Connecting People and Businesse for a Brighter Future.</span>
+      <h1>人と企業をつなぎ、<br>未来を作る。</h1>
+      <p>
+        人材と通信の力で、企業の成長と新しい可能性を支えます。
+        合同会社Liconnectは、通信業界の現場を支えるパートナーです。
+      </p>
+      <div>
+        <a class="button" href="#service">事業内容を見る　→</a>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <span class="section-label">ABOUT US</span>
+      <h2>Liconnectについて</h2>
+      <p class="intro">
+        私たちは、通信サービスの販売支援を通じて、
+        人と企業をつなぐ会社です。
+        お客様に寄り添った接客と、店舗運営を支える力を大切にしています。
+      </p>
+    </section>
+
+    <section class="section services" id="service">
+      <span class="section-label">SERVICE</span>
+      <h2>事業内容</h2>
+      <p class="intro">
+        携帯ショップや家電量販店の現場を、幅広い業務で支援します。
+      </p>
+
+      <div class="cards">
+        <article class="card">
+          <h3>01　端末販売</h3>
+          <p>スマートフォン・タブレット端末の販売と、お客様に合わせた商品提案を行います。</p>
+        </article>
+
+        <article class="card">
+          <h3>02　プラン・サービス提案</h3>
+          <p>料金プラン、インターネット回線、各種オプションサービスをご案内します。</p>
+        </article>
+
+        <article class="card">
+          <h3>03　店舗運営サポート</h3>
+          <p>お客様対応、契約手続き、売り場管理、販促活動などを支援します。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section recruit" id="recruit">
+      <span class="section-label">RECRUIT</span>
+      <h2>一緒に未来を作る仲間へ。</h2>
+      <p>
+        通信業界の仕事を通じて、ともに成長できる仲間を目指しています。
+      </p>
+      <p>採用に関する詳細は、準備ができ次第掲載します。</p>
+    </section>
+
+    <section class="section" id="company">
+      <span class="section-label">COMPANY</span>
+      <h2>会社概要</h2>
+
+      <table class="company-info">
+        <tr>
+          <th>会社名</th>
+          <td>合同会社Liconnect</td>
+        </tr>
+        <tr>
+          <th>所在地</th>
+          <td>北海道札幌市豊平区美園十二条6丁目1番6-505</td>
+        </tr>
+        <tr>
+          <th>事業内容</th>
+          <td>通信サービス販売支援、店舗運営サポート</td>
+        </tr>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>合同会社Liconnect</p>
+    <p>人と企業をつなぎ、未来を作る。</p>
+    <p>© 2026 Liconnect. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
